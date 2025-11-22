@@ -1,0 +1,76 @@
+.touch-point {
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  background: transparent;
+}
+
+
+.touch-point-image {
+  display: block;
+  object-fit: contain;
+}
+
+.touch-point-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  overflow: visible;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  box-shadow: none;
+}
+
+
+.overlay {
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.overlay-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay-content {
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  max-height: 200px;
+}
+
+.overlay-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.overlay-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
