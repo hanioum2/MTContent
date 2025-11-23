@@ -165,9 +165,23 @@ export function TouchPoint({ touchPoint, containerWidth, containerHeight, overla
                 color: overlayTextColor,
                 padding: `${overlayPadding}px ${overlayPadding * 1.25}px`,
               }}
-            >
-              {touchPoint.overlayContent}
-            </div>
+              dangerouslySetInnerHTML={{
+                __html: touchPoint.overlayContent
+                  // First, replace double newlines with a special marker
+                  .replace(/\n\n/g, '||DOUBLE_BREAK||')
+                  // Then split by single newlines
+                  .split('\n')
+                  .map((line) => {
+                    // Support bold text with <b> or <strong> tags, or **text** markdown-style
+                    return line
+                      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                      .replace(/<b>(.+?)<\/b>/gi, '<strong>$1</strong>');
+                  })
+                  .join('<br />')
+                  // Replace the double break marker with double breaks
+                  .replace(/\|\|DOUBLE_BREAK\|\|/g, '<br /><br />')
+              }}
+            />
           </div>
         </div>
       )}
