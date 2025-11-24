@@ -66,7 +66,7 @@ const sampleStories: StoryType[] = [
         overlayOffsetY: 350, // -20px vertical offset (moved up)
         glowColor: '#f8d608', // Red glow
         glowSize: 10, // 20px glow size
-        overlayTimer: 10000,
+        overlayTimer: 30000,
       },
       {
         id: 'tp2',
@@ -85,11 +85,11 @@ const sampleStories: StoryType[] = [
         overlayPadding: 12, // 12px padding
         overlayTitleColor: '#000000', // Black title color
         overlayTextColor: '#000000', // Dark gray text color
-        overlayOffsetX: -460, // 40px horizontal offset
+        overlayOffsetX: -440, // 40px horizontal offset
         overlayOffsetY: 250, // -20px vertical offset (moved up)
         glowColor: '#f8d608', // Red glow
         glowSize: 10, // 20px glow size
-        overlayTimer: 10000,
+        overlayTimer: 30000,
       },{
         id: 'tp3',
         type: 'image',
@@ -111,7 +111,7 @@ const sampleStories: StoryType[] = [
         overlayOffsetY: -200, // -20px vertical offset (moved up)
         glowColor: '#f8d608', // Red glow
         glowSize: 10, // 20px glow size
-        overlayTimer: 10000,
+        overlayTimer: 30000,
       },{
         id: 'tp4',
         type: 'image',
@@ -133,7 +133,7 @@ const sampleStories: StoryType[] = [
         overlayOffsetY: -100, // -20px vertical offset (moved up)
         glowColor: '#f8d608', // Red glow
         glowSize: 10, // 20px glow size
-        overlayTimer: 10000,
+        overlayTimer: 30000,
       },{
         id: 'tp5',
         type: 'image',
@@ -155,7 +155,7 @@ const sampleStories: StoryType[] = [
         overlayOffsetY: 100, // -20px vertical offset (moved up)
         glowColor: '#f8d608', // Red glow
         glowSize: 10, // 20px glow size
-        overlayTimer: 10000,
+        overlayTimer: 30000,
       },{
         id: 'tp6',
         type: 'image',
@@ -177,7 +177,7 @@ const sampleStories: StoryType[] = [
         overlayOffsetY: -100, // -20px vertical offset (moved up)
         glowColor: '#f8d608', // Red glow
         glowSize: 10, // 20px glow size
-        overlayTimer: 10000,
+        overlayTimer: 30000,
       },{
         id: 'tp7',
         type: 'image',
@@ -199,7 +199,7 @@ const sampleStories: StoryType[] = [
         overlayOffsetY: -30, // -20px vertical offset (moved up)
         glowColor: '#f8d608', // Red glow
         glowSize: 10, // 20px glow size
-        overlayTimer: 10000,
+        overlayTimer: 30000,
       },{
         id: 'tp8',
         type: 'image',
@@ -221,7 +221,7 @@ const sampleStories: StoryType[] = [
         overlayOffsetY: 320, // -20px vertical offset (moved up)
         glowColor: '#f8d608', // Red glow
         glowSize: 10, // 20px glow size
-        overlayTimer: 10000,
+        overlayTimer: 30000,
       }
     ],
   },
